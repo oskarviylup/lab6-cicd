@@ -1,4 +1,5 @@
 import unittest
+import pickle
 from main import Calculator
 class TestCalculator(unittest.TestCase):
     def setUp(self):
@@ -15,6 +16,9 @@ class TestCalculator(unittest.TestCase):
 
     def test_divide(self):
         self.assertEqual(self.calculator.div(32,4), 8)
+
+    def test_divide1(self):
+        self.assertEqual(self.calculator.div(32, 4), 8)
 
 if __name__ == "__main__":
     unittest.main()
